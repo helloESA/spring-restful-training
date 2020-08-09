@@ -3,7 +3,6 @@ package com.latihan.restful.service;
 import com.latihan.restful.entity.Product;
 import com.latihan.restful.model.request.BrandRequest;
 import com.latihan.restful.model.response.ProductResponse;
-import com.latihan.restful.model.response.WebResponse;
 import com.latihan.restful.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,7 +11,6 @@ import org.springframework.validation.annotation.Validated;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Validated
