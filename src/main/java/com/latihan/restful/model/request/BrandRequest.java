@@ -1,5 +1,6 @@
 package com.latihan.restful.model.request;
 
+import com.latihan.restful.validation.BrandMustExist;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -13,7 +14,6 @@ import javax.validation.constraints.NotNull;
 @NoArgsConstructor
 @AllArgsConstructor
 public class BrandRequest {
-    @NotNull
-    @NotBlank(message = "Brand Must Exist")
+    @BrandMustExist
     private String brand;
 }
